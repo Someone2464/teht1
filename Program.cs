@@ -14,6 +14,7 @@ namespace tehtävä1
             string nimi = Console.ReadLine();
             Console.WriteLine("Minkä ikäinen olet?");
             string ika = Console.ReadLine();
+            int ika = Convert.ToInt32(ika);
             int tulos;
             int iika;
             tulos = int.TryParse(ika, out iika);
@@ -24,7 +25,7 @@ namespace tehtävä1
             else
             {
                 Console.WriteLine("Anna ikä numerona");
-                
+                Console.ReadLine();
             }
         }
     }
